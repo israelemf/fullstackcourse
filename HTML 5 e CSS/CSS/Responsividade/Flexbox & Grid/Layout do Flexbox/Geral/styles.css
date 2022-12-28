@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: darkgray;
+    min-height: 100vh;
+    display: flex;
+    gap: 0px 15px;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column;*/
+
+}
+
+.item {
+    width: 100%;
+    height: 70px;
+    border: 2px solid black;
+    background-color: aliceblue;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Tamanho básico do item, para ser aplicado deve ser removido o width. é importante pq é usado com as funcionalidades flex-grow e flex-shrink
+       flex-grow -> Uma forma de aumentar o tamanho dos itens sem que eles quebrem de forma imediata. 
+       flex-shrink -> Diminuição dos itens, 1 significa que todos os itens vão diminuir de forma igual. 2 significa que o item 1 vai diminuir mais que os outros*/
+}
+
+.item1 {
+    order: 2;
+    align-self: flex-start;
+}
+
+.item2 {
+    order: 3;
+}
+
+.item3 {
+    order: 1;
+}
+
+@media (max-width: 320px) {
+    .item2 {
+        flex: 1 0 620px;
+    }
+
+}

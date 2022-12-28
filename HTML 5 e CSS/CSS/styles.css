@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Geostar&family=Montserrat:wght@100&display=swap');
+
+
+
+p {
+    font-family: Montserrat, Arial;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+h1 {
+    font-family: Geostar, cursive;
+    margin: 45px auto 200px auto;
+    width: 15%;
+    border: 2px solid;
+    padding: 10px;
+}
